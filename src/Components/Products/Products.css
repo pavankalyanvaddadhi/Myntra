@@ -1,0 +1,59 @@
+
+
+
+
+
+/* Card for each product */
+.card-products {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    border: 1px solid #ccc; /* Border around the card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    height: 100%; /* Ensure cards are of equal height */
+    min-height: 350px; /* Set a minimum height for the card */
+}
+
+/* Hover effect for cards */
+.card-products:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Image for each product */
+.product-image {
+    width: 100%; /* Make image take full width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover the area without distortion */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+/* Title for each product */
+.product-title {
+    font-size: 1.2em; /* Title font size */
+    margin: 10px 0; /* Margin around the title */
+    font-weight: bold; /* Make title bold */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+}
+
+/* Price for each product */
+.product-price {
+    font-size: 1.1em; /* Slightly larger font for price */
+    color: #2c3e50; /* Darker color for price */
+    margin: 5px 0; /* Margin around price */
+}
+
+/* Rating for each product */
+.product-rating {
+    font-size: 0.9em; /* Smaller font for rating */
+    color: #7f8c8d; /* Lighter color for rating */
+    margin: 5px 0; /* Margin around rating */
+}
+
+/* Stars for product rating */
+.rating-stars {
+    color: #f39c12; /* Color for stars */
+}
