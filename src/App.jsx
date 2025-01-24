@@ -23,6 +23,7 @@ function App() {
       <Header updatesearchdata={updateSearchData} onCategorySelect={handleCategorySelect} />
       <Routes>
         <Route path="/" element={<Products searchTerm={searchTerm} selectedCategory={selectedCategory} />} />
+        <Route path="/Products" element={<Products/>}/>
         <Route path="/Login" element={<Login />} />
       </Routes>
     </Router>

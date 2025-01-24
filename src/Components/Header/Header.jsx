@@ -30,6 +30,7 @@ const Header = ({ updatesearchdata, onCategorySelect }) => {
   function handlehome() {
     Navigate("/");
   }
+  
 
   return (
     <div className="header" style={{ position: "sticky", top: "0", backgroundColor: "white", zIndex: 1000 }}>
@@ -41,6 +42,7 @@ const Header = ({ updatesearchdata, onCategorySelect }) => {
           onClick={handlehome}
         />
         <div className="navbuttons" style={{ display: "flex", justifyContent: "center", padding: "33px 16px" }}>
+          <CustomButton text="All" size="small" variant="text" className="button" color="black" fontWeight="800" onClick={() => handleCategoryClick("")} />
           <CustomButton text="Mens" size="small" variant="text" className="button" color="black" fontWeight="800" onClick={() => handleCategoryClick("men's clothing")} />
           <CustomButton text="Women" size="small" variant="text" className="button" color="black" onClick={() => handleCategoryClick("women's clothing")} />
           <CustomButton text="Jewellery" size="small" variant="text" className="button" color="black" onClick={() => handleCategoryClick("jewelery")} />

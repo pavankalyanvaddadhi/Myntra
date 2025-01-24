@@ -83,6 +83,8 @@ const Products = ({ searchTerm, selectedCategory }) => {
   ));
 
   return (
+    
+   
     <div className="container">
       <div className="row">{productCards}</div>
     </div>

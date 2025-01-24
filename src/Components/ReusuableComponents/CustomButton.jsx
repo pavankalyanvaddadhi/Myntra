@@ -11,7 +11,8 @@ const CustomButton = ({
   fontWeight,
   backgroundColor,
   width,
-  height
+  height,
+  onClick
 }) => {
   return (
     <div>
@@ -21,6 +22,7 @@ const CustomButton = ({
         size={size}
         className={className}
         fontWeight={fontWeight}
+        onClick={onClick}
       
     
         sx={{
